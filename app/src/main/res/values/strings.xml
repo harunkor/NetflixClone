@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Netflix Clone</string>
+    <string name="add_profile">Add Profile</string>
+    <string name="started_list_item_title">Kids</string>
+    <string name="citation">Citation</string>
+</resources>

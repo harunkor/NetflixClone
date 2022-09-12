@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Netflix Clone</string>
+    <string name="add_profile">Kullanıcı Ekle</string>
+    <string name="started_list_item_title">Kids</string>
+    <string name="citation">Citation</string>
+</resources>
