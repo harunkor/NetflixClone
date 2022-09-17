@@ -15,8 +15,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:voiceIcon="@drawable/ic_search_mic_icon"
-        app:voiceSearchMode="showVoiceSearchButton|launchRecognizer" />
+        app:voiceIcon="@drawable/ic_search_mic_icon" />
 
     <TextView
         android:id="@+id/textView2"
