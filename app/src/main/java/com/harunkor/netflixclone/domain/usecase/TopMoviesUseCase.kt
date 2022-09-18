@@ -1,8 +1,9 @@
 package com.harunkor.netflixclone.domain.usecase
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.harunkor.netflixclone.domain.model.TopMoviesModel
+import com.harunkor.netflixclone.domain.model.topmovies.TopMoviesModel
 import com.harunkor.netflixclone.domain.repository.TopMoviesRepository
 import com.harunkor.netflixclone.utils.Constants.Companion.API_KEY
 import retrofit2.Call
@@ -27,7 +28,7 @@ class TopMoviesUseCase @Inject constructor(
             }
 
             override fun onFailure(call: Call<TopMoviesModel>, t: Throwable) {
-
+                Log.v("ERROR",t.message.toString())
             }
 
         })

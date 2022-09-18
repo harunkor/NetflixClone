@@ -1,6 +1,6 @@
 package com.harunkor.netflixclone.domain.repository
 
-import com.harunkor.netflixclone.domain.model.TopMoviesModel
+import com.harunkor.netflixclone.domain.model.topmovies.TopMoviesModel
 import retrofit2.Call
 
 interface TopMoviesRepository {

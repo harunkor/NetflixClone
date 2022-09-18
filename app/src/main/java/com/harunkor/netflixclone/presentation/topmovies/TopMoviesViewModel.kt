@@ -2,7 +2,7 @@ package com.harunkor.netflixclone.presentation.topmovies
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
-import com.harunkor.netflixclone.domain.model.TopMoviesModel
+import com.harunkor.netflixclone.domain.model.topmovies.TopMoviesModel
 import com.harunkor.netflixclone.domain.usecase.TopMoviesUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
