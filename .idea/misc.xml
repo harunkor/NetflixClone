@@ -3,6 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/TULPAR/Desktop/AndroidBootcamp/NetflixClone-1/app/src/main/res/drawable/previews_item.xml" value="0.567" />
+        <entry key="..\:/Users/TULPAR/Desktop/AndroidBootcamp/NetflixClone-1/app/src/main/res/layout/search_list_item.xml" value="0.5744791666666667" />
+        <entry key="..\:/Users/TULPAR/Desktop/AndroidBootcamp/NetflixClone-1/app/src/main/res/layout/search_screen.xml" value="0.5744791666666667" />
+        <entry key="..\:/Users/TULPAR/Desktop/AndroidBootcamp/NetflixClone-1/app/src/main/res/layout/splash_screen.xml" value="0.5744791666666667" />
+        <entry key="..\:/Users/TULPAR/Desktop/AndroidBootcamp/NetflixClone-1/app/src/main/res/layout/started_list_item.xml" value="0.5744791666666667" />
+        <entry key="..\:/Users/TULPAR/Desktop/AndroidBootcamp/NetflixClone-1/app/src/main/res/layout/started_screen.xml" value="0.5744791666666667" />
         <entry key="app/src/main/res/drawable/ic_search_mic_icon.xml" value="0.1985" />
         <entry key="app/src/main/res/drawable/search_list_item_background.xml" value="0.1985" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.165" />
