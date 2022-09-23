@@ -2,7 +2,6 @@ package com.harunkor.netflixclone.data.remote
 
 import com.harunkor.netflixclone.domain.model.comingsoon.ComingSoonModel
 import com.harunkor.netflixclone.domain.model.mostpopulermovies.MostPopulerMoviesModel
-import com.harunkor.netflixclone.domain.model.mostpopulertv.MostPopulerTvItem
 import com.harunkor.netflixclone.domain.model.mostpopulertv.MostPopulerTvModel
 import com.harunkor.netflixclone.domain.model.searchall.SearchAllModel
 import com.harunkor.netflixclone.domain.model.topmovies.TopMoviesModel
