@@ -5,7 +5,9 @@
       <map>
         <entry key="app/src/main/res/drawable/ic_search_mic_icon.xml" value="0.1985" />
         <entry key="app/src/main/res/drawable/search_list_item_background.xml" value="0.1985" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.37604166666666666" />
+        <entry key="app/src/main/res/layout/mylist_item.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/mylist_screen.xml" value="0.375" />
         <entry key="app/src/main/res/layout/search_list_item.xml" value="0.4490332340848619" />
         <entry key="app/src/main/res/layout/search_screen.xml" value="0.335" />
         <entry key="app/src/main/res/layout/splash_screen.xml" value="0.19610507246376813" />
