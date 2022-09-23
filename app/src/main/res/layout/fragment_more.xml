@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        tools:context=".presentation.more.MoreFragment">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAddButton"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_7sdp"
+            app:icon="@drawable/plus"
+            app:iconTint="@color/btn_grey"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            android:paddingStart="@dimen/_4sdp"
+            android:paddingEnd="@dimen/_4sdp"
+            app:layout_constraintDimensionRatio="W,1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.17"
+            app:strokeColor="@color/btn_grey"
+            app:strokeWidth="@dimen/_2sdp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/more_recyclerView"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_64sdp"
+            android:layout_marginStart="@dimen/_7sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_7sdp"
+            app:layout_constraintEnd_toStartOf="@+id/btnAddButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnManageProfile"
+            style="@style/btn_manage_profile_style"
+            android:text="@string/manage_profiles"
+            app:icon="@drawable/pencil"
+            app:iconGravity="textStart"
+            app:iconTint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/more_recyclerView" />
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_210sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:background="#1A1A1A"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnManageProfile" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvAboutNetflix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_17sdp"
+            android:drawableLeft="@drawable/dialog"
+            android:gravity="center"
+            android:textSize="@dimen/_14ssp"
+            android:fontFamily="@font/sf_pro_display_bold"
+            android:drawablePadding="@dimen/_7sdp"
+            android:text="@string/tell_friends_about_netflix"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnManageProfile" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:fontFamily="@font/sf_pro_display_medium"
+            android:text="@string/lorem_ipsum"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tvAboutNetflix"
+            app:layout_constraintTop_toBottomOf="@+id/tvAboutNetflix" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/materialButton"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/sf_pro_display_medium"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:maxHeight="@dimen/_11sdp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:padding="0dp"
+            android:text="@string/terms_conditions"
+            android:textAllCaps="false"
+            android:textColor="@color/btn_grey"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditText"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:background="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/materialButton2"
+            app:layout_constraintEnd_toStartOf="@+id/materialButton2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/materialButton2" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/materialButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/sf_pro_display_bold"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/copy_link"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13ssp"
+            android:layout_marginEnd="@dimen/_7sdp"
+            app:layout_constraintEnd_toEndOf="@+id/divider4"
+            app:layout_constraintTop_toBottomOf="@+id/materialButton" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/Guideline0"
+            app:layout_constraintGuide_percent="0"
+            style="@style/guideline_style" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/Guideline1"
+            app:layout_constraintGuide_percent="0.13"
+            style="@style/guideline_style" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/Guideline2"
+            style="@style/guideline_style"
+            app:layout_constraintGuide_percent="0.26" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/Guideline3"
+            style="@style/guideline_style"
+            app:layout_constraintGuide_percent="0.39" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/Guideline4"
+            style="@style/guideline_style"
+            app:layout_constraintGuide_percent="0.52" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/Guideline5"
+            style="@style/guideline_style"
+            app:layout_constraintGuide_percent="0.65" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/Guideline6"
+            style="@style/guideline_style"
+            app:layout_constraintGuide_percent="0.78" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/Guideline7"
+            style="@style/guideline_style"
+            app:layout_constraintGuide_percent="0.91" />
+
+        <ImageButton
+            android:id="@+id/btnWhatsapp"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/whatsapp"
+            app:layout_constraintEnd_toStartOf="@+id/divider"
+            app:layout_constraintStart_toStartOf="@id/Guideline0"
+            app:layout_constraintTop_toBottomOf="@+id/textInputEditText" />
+
+        <View
+            android:id="@+id/divider"
+            style="@style/dividerStyle"
+            android:layout_marginTop="@dimen/_16sdp"
+            app:layout_constraintStart_toStartOf="@id/Guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/textInputEditText"
+            />
+
+        <ImageButton
+            android:id="@+id/btnFacebook"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/facebook"
+            app:layout_constraintEnd_toStartOf="@+id/Guideline4"
+            app:layout_constraintStart_toStartOf="@id/Guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/textInputEditText" />
+
+       <View
+            android:id="@+id/divider2"
+            style="@style/dividerStyle"
+            android:layout_marginTop="@dimen/_16sdp"
+            app:layout_constraintStart_toStartOf="@id/Guideline4"
+            app:layout_constraintTop_toBottomOf="@+id/textInputEditText"
+            />
+
+        <ImageButton
+            android:id="@+id/btnGmail"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/gmail"
+            app:layout_constraintEnd_toStartOf="@+id/Guideline6"
+            app:layout_constraintStart_toStartOf="@id/Guideline4"
+            app:layout_constraintTop_toBottomOf="@+id/textInputEditText" />
+
+        <View
+            android:id="@+id/divider3"
+            style="@style/dividerStyle"
+            android:layout_marginTop="@dimen/_16sdp"
+            app:layout_constraintStart_toStartOf="@id/Guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/textInputEditText"
+            />
+
+        <ImageButton
+            android:id="@+id/btnMore"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/more"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/divider3"
+            app:layout_constraintTop_toBottomOf="@+id/textInputEditText" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnMyList"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_display_medium"
+            android:text="@string/my_list"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11ssp"
+            app:icon="@drawable/approve"
+            app:iconTint="#E0E0E0"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginStart="@dimen/_18sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="3dp"
+            android:background="#424242"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnMyList" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAppSettings"
+            style="@style/more_subtext_style"
+            android:text="@string/app_settings"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginStart="@dimen/_18sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider5" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAccount"
+            style="@style/more_subtext_style"
+            android:text="@string/account"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginStart="@dimen/_18sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnAppSettings" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnHelp"
+            style="@style/more_subtext_style"
+            android:text="@string/help"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginStart="@dimen/_18sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnAccount" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSignOut"
+            style="@style/more_subtext_style"
+            android:text="@string/sign_out"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginStart="@dimen/_18sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnHelp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
